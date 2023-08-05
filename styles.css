@@ -1,1 +1,88 @@
-@import url('http://fonts.googleapis.com/css?family=Courgette ')
+/* Imports Fonts used */
+@import url("http://fonts.googleapis.com/css?family=Courgette | Open+Sans:400,800&display=swap");
+
+/* According to research I've done this resets the page so that theres no bars on the sides when you add items in.
+This is to solve the problem where I would be able to see white space next to either images or flexboxes or dives added into page */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Addtions to define certain colours often used. This is so I do not have to define 
+the hex code each time and rather define it with with a name */
+/* As of right now there will be nothing inside till I decide the colours but for sake of the code not breaking I will define one */
+
+/* Add Colours Later. For now all colour code will be commented to not affect file but show it as placeholders */
+
+:root {
+  --black-colour: #000000;
+}
+
+/* Global Styles used everywhere (inclusive of nav bar) */
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  /* color: var(); */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.nav_container {
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+
+/* Navigation Bar */
+.nav_header {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background-color: var(); */
+  z-index: 999;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.logo img {
+  max-width: 200px;
+  display: flex;
+}
+
+.navigation_menu {
+  font-size: 2.6rem;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 1500;
+}
+/* Index Page (Home) */
