@@ -1,132 +1,120 @@
 /* Imports Fonts used */
-@import url("https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
+
+/* Adding root colours so I don't have to recall the codes for them */
+:root{
+  --primary-colour:#2c3855;
+  --primary-colour-dark: #435681;
+  --text-dark: #333333;
+  --text-light: #767268;
+  --extra-light: #f3f4f6;
+  --white: #ffffff;
+  --max-width:1200px
+}
+
+/* Universal css code. Kept the same
+ throughout the file unless state otherwise.
+ This is so I don;t need to repeat code*/
 
 /* According to research I've done this resets the page so that theres no bars on the sides when you add items in.
 This is to solve the problem where I would be able to see white space next to either images or flexboxes or dives added into page */
-
-*,
-*::before,
-*::after {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Addtions to define certain colours often used. This is so I do not have to define 
-the hex code each time and rather define it with with a name */
-/* As of right now there will be nothing inside till I decide the colours but for sake of the code not breaking I will define one */
-
-/* Add Colours Later. For now all colour code will be commented to not affect file but show it as placeholders */
-
-:root {
-  --black-colour: #000000;
+/* Sets font for website */
+body{
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Global Styles used everywhere (inclusive of nav bar) */
-html {
-  font-size: 10px;
-}
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
-  /* color: var(); */
+
+
+.section_header {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-align: center;
 }
 
-a {
+a{
   text-decoration: none;
-  color: inherit;
 }
 
-ul {
-  list-style: none;
-}
-
-section {
-  padding: 5rem 0;
-}
-
-.nav_container {
+img :not(.navbar_nav) {
   width: 100%;
-  max-width: 120rem;
-  padding: 0 1.5rem;
-  margin: 0 auto;
-}
-
-/* Navigation Bar */
-.nav_header {
-  width: 100%;
-  height: 6rem;
   display: flex;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: blue;
-  z-index: 999;
 }
 
-.nav_links {
+
+
+
+/* Universal Navigation Bar */
+.navbar_div {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.6),(rgba(0,0,0,0.6)));
+}
+
+.navbar_nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.logo img {
-  max-width: 200px;
-  display: flex;
-  margin-top: 25px;
-}
-
-.navigation_menu {
-  font-size: 2.6rem;
-  color: #fff;
-  cursor: pointer;
-  position: relative;
-  z-index: 1500;
-}
-
-.navigation_menu .fa-times {
-  display: none;
-}
-
-.navigation_menu .fa-bars {
-  justify-content: right;
-  display: flex;
-}
-
-.nav_pages {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 1400;
-  opacity: 0;
-  transform: scale(0);
-  transition: 0.5s;
-}
-
-.menu-open .nav_pages {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.nav_items:not(:last-child) {
-  margin-bottom: 15px;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .nav_links {
-  display: block;
-  color: #fff;
-  font-size: 3rem;
-  font-weight: bold;
-  text-transform: capitalize;
-  letter-spacing: 2px;
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px ;
+
 }
 
-/* Index Page (Home) */
+.nav_links a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .4s;
+  font-size: 18px;
+  
+}
+
+/* A hover effect for my navigation bar pages */
+.nav_links a:hover{
+  background-color: #80808098;
+  border-radius: 20px;
+  padding: 10px;
+  transition: .5s;
+}
+
+.nav_button {
+  border: none;
+  background: #808080;
+  padding: 12px 12px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: .4s;
+}
+
+/* A hover effect for my contact us button */
+.nav_button:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+/* Home Page (Index) */
+
+
+
+/* Hire a Cabin (hiring) */
+
+.cabin_hire_container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
