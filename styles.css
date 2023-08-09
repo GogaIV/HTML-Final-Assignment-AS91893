@@ -1,16 +1,15 @@
 /* Imports Fonts used */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap");
 
 /* Adding root colours so I don't have to recall the codes for them */
-:root{
-  --primary-colour:#2c3855;
+:root {
+  --primary-colour: #2c3855;
   --primary-colour-dark: #435681;
   --text-dark: #333333;
   --text-light: #767268;
   --extra-light: #f3f4f6;
   --white: #ffffff;
-  --max-width:1200px
+  --max-width: 1200px;
 }
 
 /* Universal css code. Kept the same
@@ -19,18 +18,16 @@
 
 /* According to research I've done this resets the page so that theres no bars on the sides when you add items in.
 This is to solve the problem where I would be able to see white space next to either images or flexboxes or dives added into page */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /* Sets font for website */
-body{
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
-
-
 
 .section_header {
   font-size: 2rem;
@@ -39,7 +36,7 @@ body{
   text-align: center;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -48,14 +45,11 @@ img :not(.navbar_nav) {
   display: flex;
 }
 
-
-
-
 /* Universal Navigation Bar */
 .navbar_div {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.6),(rgba(0,0,0,0.6)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), (rgba(0, 0, 0, 0.6)));
 }
 
 .navbar_nav {
@@ -70,25 +64,23 @@ img :not(.navbar_nav) {
 .nav_links {
   list-style-type: none;
   display: inline-block;
-  padding: 10px 20px ;
-
+  padding: 10px 20px;
 }
 
 .nav_links a {
   color: black;
   text-decoration: none;
   font-weight: bold;
-  transition: .4s;
+  transition: 0.4s;
   font-size: 18px;
-  
 }
 
 /* A hover effect for my navigation bar pages */
-.nav_links a:hover{
+.nav_links a:hover {
   background-color: #80808098;
   border-radius: 20px;
   padding: 10px;
-  transition: .5s;
+  transition: 0.45s ease-in;
 }
 
 .nav_button {
@@ -98,7 +90,7 @@ img :not(.navbar_nav) {
   border-radius: 30px;
   font-weight: bold;
   font-size: 15px;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 /* A hover effect for my contact us button */
@@ -107,14 +99,130 @@ img :not(.navbar_nav) {
   cursor: pointer;
 }
 
-/* Home Page (Index) */
+/* Home Page (Index, 1st page) */
 
-
-
-/* Hire a Cabin (hiring) */
+/* Hire a Cabin (hiring, 3rd page) */
 
 .cabin_hire_container {
   max-width: var(--max-width);
   margin: auto;
   padding: 5rem 1rem;
+}
+
+.header_container {
+  padding: 1rem 1rem 5rem 1rem;
+}
+
+.cabin_hire_image {
+  position: relative;
+  min-height: 500px;
+  background-image: linear-gradient(
+      to right,
+      rgba(44, 56, 85, 0.9),
+      rgba(100, 125, 187, 0.1)
+    ),
+    url(./Images/maunga_club_cabin.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+}
+
+.cabin_hire_content {
+  max-width: 600;
+  padding: 5rem 2rem;
+}
+.cabin_hire_content h1 {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.cabin_hire_content p {
+  color: var(--extra-light);
+}
+
+.booking_container {
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 6rem);
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem, 2rem;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.booking_container form {
+  width: 100%;
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.booking_container .cabin_hire_input {
+  width: 100%;
+  margin-left: 2px;
+  position: relative;
+}
+
+.booking_container label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.booking_container input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--primary-colour);
+  color: var(--text-dark);
+}
+
+.booking_container input:focus ~ label {
+  font-size: 0.8rem;
+  top: 0;
+}
+
+.booking_container .hire_form p {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  margin-left: 2px;
+  color: var(--text-light);
+}
+
+.booking_container .hire_button {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--white);
+  background-color: var(--primary-colour);
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.booking_container .hire_button:hover {
+  background-color: var(--primary-colour-dark);
 }
