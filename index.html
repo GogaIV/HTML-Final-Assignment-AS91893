@@ -20,23 +20,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
   </head>
-  <style>
-    /* Define the animation */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-    /* Apply initial state */
-    .animate-on-scroll {
-      opacity: 0;
-      transition: opacity 0.5s;
-    }
-  </style>
   <!-- Start of page creation -->
   <body>
     <!-- Create universal navigation header -->
@@ -71,26 +54,60 @@
         </p1>
       </div>
     </section>
+    <section class="chalet_promotional">
+      <div class="chalet_grid">
+        <div class="chalet_card">
+          <img
+            src="/Images/kakapo/cabin_exterior.jpg"
+            alt="Luxurious Kakapo Cabin"
+          />
+          <div class="cabin_description">
+            <div class="cabin_header">
+              <h4>Kakapo Cabin</h4>
+            </div>
+            <h3>Click Image For More</h3>
+            <!-- <p>
+              Kakapo Cabin is a Serene mountain retreat surrounded by nature,
+              perfect for nature lovers and outdoor enthusiasts.
+              Breathtaking views and nearby hiking trails.
+            </p> -->
+          </div>
+        </div>
+        <div class="chalet_card">
+          <img
+            src="/Images/kereru/cabin_exterior.jpg"
+            alt="Pristine Kereru Cabin"
+          />
+          <div class="cabin_description">
+            <div class="cabin_header">
+              <h4>Kereru Cabin</h4>
+            </div>
+            <h3>Click Image For More</h3>
+            <!-- <p>
+              Experience the magic of Kereru Mountain at our cozy snow cabins.
+               Unwind in the serene winter landscapes and create lasting memories.
+            </p> -->
+          </div>
+        </div>
+        <div class="chalet_card">
+          <img
+            src="/Images/pukeko/chalet_exterior.jpg"
+            alt="New Pukeko Cabin"
+          />
+          <div class="cabin_description">
+            <div class="cabin_header">
+              <h4>Pukeko Cabin</h4>
+            </div>
+            <h3>Click Image For More</h3>
+            <!-- <p>
+              Pukeko snow cabins offer cozy accommodations in the snowy landscapes of Pukeko Mountain, 
+              providing a rustic and immersive winter experience.
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- State javascript file -->
-    <script>
-      // Add scroll event listener
-      window.addEventListener("scroll", function () {
-        // Get scroll position
-        var scrollPosition = window.scrollY;
-
-        // Get element
-        var element = document.querySelector(".promotional_quote");
-
-        // Calculate element's position relative to the viewport
-        var elementPosition =
-          element.getBoundingClientRect().top + scrollPosition;
-
-        // Determine when to start animation
-        if (scrollPosition > elementPosition - window.innerHeight / 2) {
-          element.classList.add("fadeIn");
-        }
-      });
-    </script>
     <script src="/Javascript/javascript.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>

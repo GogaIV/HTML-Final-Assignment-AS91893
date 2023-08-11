@@ -10,6 +10,8 @@
   --extra-light: #f3f4f6;
   --white: #ffffff;
   --max-width: 1200px;
+  --snow-white: #f1ece6;
+  --light-blue: #adbccd;
 }
 
 /* Universal css code. Kept the same
@@ -27,6 +29,7 @@ This is to solve the problem where I would be able to see white space next to ei
 /* Sets font for website */
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--snow-white);
 }
 
 a {
@@ -36,6 +39,7 @@ a {
 img :not(.navbar_nav) {
   width: 100%;
   display: flex;
+  
 }
 
 /* Universal Navigation Bar */
@@ -49,7 +53,7 @@ img :not(.navbar_nav) {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 15px;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -117,6 +121,57 @@ img :not(.navbar_nav) {
   max-width: var(--max-width);
   margin: auto;
   padding: 5rem 1rem;
+}
+
+.chalet_grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-left: 9rem;
+}
+
+.chalet_card {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  width: 25rem;
+  height: fit-content;
+}
+
+.chalet_card img {
+  width: 25rem;
+  height: 25rem;
+  position: relative;
+}
+
+.cabin_description {
+  padding: 1rem;
+}
+
+.cabin_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.1rem;
+}
+
+.cabin_header h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.cabin_description h3 {
+  font-size: 1rem;
+  font-weight: 200;
+  color: var(--text-light);
+  margin-bottom: 0.3rem;
+}
+
+.cabin_description p {
+  color: var(--text-light);
 }
 
 /* Hire a Cabin (hiring, 3rd page) */
