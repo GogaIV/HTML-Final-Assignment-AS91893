@@ -12,6 +12,7 @@
   --max-width: 1200px;
   --snow-white: #f1ece6;
   --light-blue: #adbccd;
+  --dark-blue: #1f4b8e;
 }
 
 /* Universal css code. Kept the same
@@ -39,8 +40,17 @@ a {
 img :not(.navbar_nav) {
   width: 100%;
   display: flex;
-  
 }
+
+/* Below is a piece of code that can be used in section classes. 
+This is a default css code used so I don't need to reapply the same code. 
+It can be added along with another class tag for specific pieces of code */
+.section_defaults {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+/* End of Universal CSS Code */
 
 /* Universal Navigation Bar */
 .navbar_div {
@@ -88,6 +98,7 @@ img :not(.navbar_nav) {
   font-weight: bold;
   font-size: 15px;
   transition: 0.4s;
+  color: black;
 }
 
 /* A hover effect for my contact us button */
@@ -128,15 +139,15 @@ img :not(.navbar_nav) {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-left: 9rem;
 }
 
 .chalet_card {
   overflow: hidden;
   border-radius: 1rem;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   width: 25rem;
   height: fit-content;
+  margin: auto;
 }
 
 .chalet_card img {
@@ -173,6 +184,60 @@ img :not(.navbar_nav) {
 .cabin_description p {
   color: var(--text-light);
 }
+
+
+.review_grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.review_card {
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  width: 25rem;
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.review_card p {
+  text-align: center;
+  color: var(--text-dark);
+}
+
+.review_card h1 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.reviews_container h2{
+  justify-content: center;
+  display: flex;
+  margin-top: 7vh;
+  font-size: 3rem;
+  color: var(--text-dark);
+}
+
+.review_card img{
+  max-width: 80px;
+  margin: auto;
+  border-radius: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+/* .homepage_membership_promo {
+  
+} */
+
+
+/* .homepage_membership_promo p{
+
+} */
+
 
 /* Hire a Cabin (hiring, 3rd page) */
 
