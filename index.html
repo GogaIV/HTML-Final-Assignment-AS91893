@@ -19,6 +19,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
+    <!-- State javascript file -->
+    <script src="/Javascript/javascript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <!-- Start of page creation -->
   <body>
@@ -62,10 +65,12 @@
     <section class="chalet_promotional">
       <div class="chalet_grid">
         <div class="chalet_card">
-          <img
-            src="/Images/kakapo/cabin_exterior.jpg"
-            alt="Luxurious Kakapo Cabin"
-          />
+          <button class="chalet_button" border="0">
+            <img
+              src="/Images/kakapo/cabin_exterior.jpg"
+              alt="Luxurious Kakapo Cabin"
+            />
+          </button>
           <div class="cabin_description">
             <div class="cabin_header">
               <h4>Kakapo Cabin</h4>
@@ -78,11 +83,16 @@
             </p> -->
           </div>
         </div>
+
+        <div></div>
+
         <div class="chalet_card">
-          <img
-            src="/Images/kereru/cabin_exterior.jpg"
-            alt="Pristine Kereru Cabin"
-          />
+          <button class="chalet_button" border="0">
+            <img
+              src="/Images/kereru/cabin_exterior.jpg"
+              alt="Pristine Kereru Cabin"
+            />
+          </button>
           <div class="cabin_description">
             <div class="cabin_header">
               <h4>Kereru Cabin</h4>
@@ -94,11 +104,14 @@
             </p> -->
           </div>
         </div>
+
         <div class="chalet_card">
-          <img
-            src="/Images/pukeko/chalet_exterior.jpg"
-            alt="New Pukeko Cabin"
-          />
+          <button class="chalet_button" border="0">
+            <img
+              src="/Images/pukeko/chalet_exterior.jpg"
+              alt="New Pukeko Cabin"
+            />
+          </button>
           <div class="cabin_description">
             <div class="cabin_header">
               <h4>Pukeko Cabin</h4>
@@ -114,43 +127,84 @@
     </section>
     <section class="homepage_reviews">
       <div class="reviews_container">
-        <h2 class="reviews_header">But Don't Take Our Word, Look at our reviews!</h2>
+        <h2 class="reviews_header">
+          But Don't Take Our Word, Look at our reviews!
+        </h2>
         <div class="review_grid">
-          <div class="review_card"> 
-            <img src="/Images/client-1.jpg">
-            <h1>Jarvis from England</h1>
+          <div class="review_card">
+            <img src="/Images/client-1.jpg" />
+            <h3>Jarvis from England</h3>
             <p>
-              The booking process was seamless, and the confirmation was instant.
-               I highly reccomend Maunga Club's Cabins for hassle-free snow cabin bookngs.
+              The booking process was seamless, and the confirmation was
+              instant. I highly reccomend Maunga Club's Cabins for hassle-free
+              snow cabin bookngs.
             </p>
           </div>
-          <div class="review_card"> 
-            <img src="/Images/client-2.jpg">
-            <h1>Sabrina from New Zealand</h1>
+          <div class="review_card">
+            <img src="/Images/client-2.jpg" />
+            <h3>Sabrina from New Zealand</h3>
             <p>
-              The website provided detailed information about the cabin's, including photos, 
-              location, and closeby tourist attractions which helped me make a informed decision.
+              The website provided detailed information about the cabin's,
+              including photos, location, and closeby tourist attractions which
+              helped me make a informed decision.
             </p>
           </div>
-          <div class="review_card"> 
-            <img src="/Images/client-3.jpg">
-            <h1>Derrek from Ukraine</h1>
+          <div class="review_card">
+            <img src="/Images/client-3.jpg" />
+            <h3>Derrek from Ukraine</h3>
             <p>
               I was able to book a cabin within minutes, and the cabin exceeded
-               my expectations. I appreciate Maunga Club's efficeny and reliability.
+              my expectations. I appreciate Maunga Club's efficeny and
+              reliability.
             </p>
           </div>
         </div>
-        </div>
+      </div>
     </section>
     <section class="section_defaults">
       <div class="homepage_membership_promo">
         <i>Cabin's can only be hired by members</i>
+        <h4>Join our membership and get access to our cabins!</h4>
+        <button
+          class="membership_page_button"
+          onclick="window.location.href = '/Pages/membership.html';"
+        >
+          Join Now
+        </button>
       </div>
-
     </section>
-    <!-- State javascript file -->
-    <script src="/Javascript/javascript.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <footer class="footer">
+      <div class="section_defaults footer_container">
+        <div class="footer_col">
+          <h3>Maunga Club</h3>
+          <p>
+            Maunga Club is a exclusive, luxury cabin booking website that offers
+            seamless and efficent ways to find and book cabin's for your next
+            snow mountain holiday
+          </p>
+          <p>
+            With a user-friendly interface and a simple bookig system, Maunga
+            Club provides secure and trustworthy experience for all mountain
+            adventurers seeking a perfect stay.
+          </p>
+        </div>
+        <div class="footer_col">
+          <h4>Pages</h4>
+          <p>Home</p>
+          <p>Membership</p>
+          <p>Cabin Hire</p>
+        </div>
+        <div class="footer_col">
+          <h4>Legal</h4>
+          <p>FAQ</p>
+          <p>Legality</p>
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+      <div class="footer_bar">
+        Copyright © Maunga Club 2023. All rights reserved.
+      </div>
+    </footer>
   </body>
 </html>
