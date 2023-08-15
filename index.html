@@ -13,7 +13,7 @@
     <!-- Below is title and calling css style sheet for all designed variables -->
     <title>Cabin Hire</title>
     <link rel="stylesheet" href="/styles.css" />
-    <link rel="javascript" href="/Javascript/javascript.js" />
+    <link defer rel="javascript" href="/Javascript/javascript.js" />
     <!-- Pulling font from online library -->
     <link
       rel="stylesheet"
@@ -65,7 +65,7 @@
     <section class="chalet_promotional">
       <div class="chalet_grid">
         <div class="chalet_card">
-          <button class="chalet_button" border="0">
+          <button data-modal-target="#modal" class="chalet_button" border="0">
             <img
               src="/Images/kakapo/cabin_exterior.jpg"
               alt="Luxurious Kakapo Cabin"
@@ -76,16 +76,8 @@
               <h4>Kakapo Cabin</h4>
             </div>
             <h3>Click Image For More</h3>
-            <!-- <p>
-              Kakapo Cabin is a Serene mountain retreat surrounded by nature,
-              perfect for nature lovers and outdoor enthusiasts.
-              Breathtaking views and nearby hiking trails.
-            </p> -->
           </div>
         </div>
-
-        <div></div>
-
         <div class="chalet_card">
           <button class="chalet_button" border="0">
             <img
@@ -98,10 +90,6 @@
               <h4>Kereru Cabin</h4>
             </div>
             <h3>Click Image For More</h3>
-            <!-- <p>
-              Experience the magic of Kereru Mountain at our cozy snow cabins.
-               Unwind in the serene winter landscapes and create lasting memories.
-            </p> -->
           </div>
         </div>
 
@@ -117,14 +105,24 @@
               <h4>Pukeko Cabin</h4>
             </div>
             <h3>Click Image For More</h3>
-            <!-- <p>
-              Pukeko snow cabins offer cozy accommodations in the snowy landscapes of Pukeko Mountain, 
-              providing a rustic and immersive winter experience.
-            </p> -->
           </div>
         </div>
       </div>
+      <div class="modal" id="modal">
+        <div class="chalet_popout_header">
+          <div class="chalet_popout_title">Kakapo Cabin</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="chalet_popout_body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          iste commodi nemo velit explicabo quasi, magnam ipsum rerum facilis
+          quae. Iste commodi explicabo facere corporis aut. Libero eligendi
+          velit explicabo.
+        </div>
+      </div>
+      <div id="overlay"></div>
     </section>
+
     <section class="homepage_reviews">
       <div class="reviews_container">
         <h2 class="reviews_header">

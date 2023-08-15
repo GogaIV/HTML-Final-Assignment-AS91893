@@ -254,6 +254,64 @@ It can be added along with another class tag for specific pieces of code */
   background-color: inherit;
 }
 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 1rem;
+  z-index: 10;
+  background-color: white;
+  width: 40rem;
+  height: 40rem;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.chalet_popout_header {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chalet_popout_header .chalet_popout_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.chalet_popout_body {
+  padding: 1rem 1.5rem;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
 .review_grid {
   margin-top: 4rem;
   display: grid;
@@ -471,6 +529,12 @@ It can be added along with another class tag for specific pieces of code */
 @media (width < 900px) {
   .booking_container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chalet_card {
+    width: 43vw;
+    height: auto;
+    position: relative;
   }
 
   .hire_form {
