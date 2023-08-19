@@ -20,7 +20,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
     <!-- State javascript file -->
-    <script src="/Javascript/javascript.js"></script>
+    <script src="/Javascript/javascript.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <!-- Start of page creation -->
@@ -53,19 +53,14 @@
     <!-- Introduction Content -->
     <section class="home_intro">
       <div class="promotional_quote">
+        <img class="home_image" src="/Images/mountain_view_1.jpg" alt="Exotic Mountain Range" />
         <h1>Your Getaway In The Mountains</h1>
-        <p1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          'deserunt impedit excepturi porro ea enim reiciendis vero itaque
-          corrupti exercitationem nesciunt iure facilis voluptas ut ipsa
-          ducimus, possimus quaerat debitis.
-        </p1>
       </div>
     </section>
     <section class="chalet_promotional">
       <div class="chalet_grid">
         <div class="chalet_card">
-          <button data-modal-target="#modal" class="chalet_button" border="0">
+          <button onclick="show1()" class="chalet_button" border="0">
             <img
               src="/Images/kakapo/cabin_exterior.jpg"
               alt="Luxurious Kakapo Cabin"
@@ -79,7 +74,7 @@
           </div>
         </div>
         <div class="chalet_card">
-          <button class="chalet_button" border="0">
+          <button onclick="show2()" class="chalet_button" border="0">
             <img
               src="/Images/kereru/cabin_exterior.jpg"
               alt="Pristine Kereru Cabin"
@@ -94,7 +89,7 @@
         </div>
 
         <div class="chalet_card">
-          <button class="chalet_button" border="0">
+          <button onclick="show3()" class="chalet_button" border="0">
             <img
               src="/Images/pukeko/chalet_exterior.jpg"
               alt="New Pukeko Cabin"
@@ -108,16 +103,55 @@
           </div>
         </div>
       </div>
-      <div class="modal" id="modal">
-        <div class="chalet_popout_header">
-          <div class="chalet_popout_title">Kakapo Cabin</div>
-          <button data-close-button class="close-button">&times;</button>
+      <div id="chalet_popup1">
+        <div class="chalet_popup_header">
+          <h3>Kakapo Cabin</h3>
+          <button onclick="hide()" class="popup_close_button">&times;</button>
         </div>
-        <div class="chalet_popout_body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-          iste commodi nemo velit explicabo quasi, magnam ipsum rerum facilis
-          quae. Iste commodi explicabo facere corporis aut. Libero eligendi
-          velit explicabo.
+        <div class="chalet_popup_p">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+            repellat, quos fugit saepe molestias asperiores dolorem, qui, illo
+            in non rem nulla culpa hic voluptate facere dicta vero libero
+            repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Est nobis unde at nulla, porro culpa iure numquam id cumque!
+            At dicta blanditiis a similique modi earum officiis. Porro, ab
+            eligendi!
+          </p>
+        </div>
+      </div>
+      <div id="chalet_popup2">
+        <div class="chalet_popup_header">
+          <h3>Kereru Cabin</h3>
+          <button onclick="hide()" class="popup_close_button">&times;</button>
+        </div>
+        <div class="chalet_popup_p">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+            repellat, quos fugit saepe molestias asperiores dolorem, qui, illo
+            in non rem nulla culpa hic voluptate facere dicta vero libero
+            repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Est nobis unde at nulla, porro culpa iure numquam id cumque!
+            At dicta blanditiis a similique modi earum officiis. Porro, ab
+            eligendi!
+          </p>
+        </div>
+      </div>
+      <div id="chalet_popup3">
+        <div class="chalet_popup_header">
+          <h3>Pukeko Cabin</h3>
+          <button onclick="hide()" class="popup_close_button">&times;</button>
+        </div>
+        <div class="chalet_popup_p">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+            repellat, quos fugit saepe molestias asperiores dolorem, qui, illo
+            in non rem nulla culpa hic voluptate facere dicta vero libero
+            repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Est nobis unde at nulla, porro culpa iure numquam id cumque!
+            At dicta blanditiis a similique modi earum officiis. Porro, ab
+            eligendi!
+          </p>
         </div>
       </div>
       <div id="overlay"></div>
@@ -204,5 +238,27 @@
         Copyright © Maunga Club 2023. All rights reserved.
       </div>
     </footer>
+    <script>
+      function hide() {
+        document.getElementById("chalet_popup1").hidden = true;
+        document.getElementById("chalet_popup2").hidden = true;
+        document.getElementById("chalet_popup3").hidden = true;
+        document.getElementById("overlay").hidden = true;
+      }
+      function show1() {
+        document.getElementById("chalet_popup1").hidden = false;
+        document.getElementById("overlay").hidden = false;
+      }
+
+      function show2() {
+        document.getElementById("chalet_popup2").hidden = false;
+        document.getElementById("overlay").hidden = false;
+      }
+
+      function show3() {
+        document.getElementById("chalet_popup3").hidden = false;
+        document.getElementById("overlay").hidden = false;
+      }
+    </script>
   </body>
 </html>
