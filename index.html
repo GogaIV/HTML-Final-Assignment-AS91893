@@ -6,7 +6,7 @@
     <!-- Below is code that works with aspect ration of device and some of it relates to making it responsive -->
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, user-scalable=no, initial-scale=1.0"
     />
     <!-- This is a less common piece of code that tells older browser (Internet Explorer) how to render the page-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -53,7 +53,11 @@
     <!-- Introduction Content -->
     <section class="home_intro">
       <div class="promotional_quote">
-        <img class="home_image" src="/Images/mountain_view_1.jpg" alt="Exotic Mountain Range" />
+        <img
+          class="home_image"
+          src="/Images/mountain_view_1.jpg"
+          alt="Exotic Mountain Range"
+        />
         <h1>Your Getaway In The Mountains</h1>
       </div>
     </section>
@@ -109,16 +113,76 @@
           <button onclick="hide()" class="popup_close_button">&times;</button>
         </div>
         <div class="chalet_popup_p">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-            repellat, quos fugit saepe molestias asperiores dolorem, qui, illo
-            in non rem nulla culpa hic voluptate facere dicta vero libero
-            repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Est nobis unde at nulla, porro culpa iure numquam id cumque!
-            At dicta blanditiis a similique modi earum officiis. Porro, ab
-            eligendi!
-          </p>
+          <div>
+            <p>
+              Kakapo Snow Mountain Cabins are nestled in the heart of a
+              picturesque mountain range. The cabins offer a cozy and rustic
+              retreat for nature enthusiasts and adventure seekers. Inside the
+              cabins, you'll find a warm and inviting atmosphere with
+              comfortable furnishings and modern amenities. The living area
+              features a fireplace, perfect for snuggling up with a book or
+              enjoying a hot cup of cocoa. The fully equipped kitchen allows you
+              to prepare your own meals, or you can dine at the nearby
+              restaurant that offers delicious local cuisine. The bedrooms are
+              spacious and offer breathtaking views of the surrounding
+              mountains. Outside, you'll find a private deck where you can relax
+              and take in the fresh mountain air. The surrounding area is a
+              paradise for outdoor activities, with hiking trails, skiing
+              slopes, and scenic spots just a stone's throw away. Whether you're
+              looking for a peaceful getaway or an action-packed adventure,
+              Kakapo Snow Mountain Cabins provide the perfect base for your
+              mountain retreat.
+            </p>
+          </div>
+          <features>
+            <h4>Features</h4>
+            <ul>
+              <li>Maximum Adults: 10</li>
+              <li>Maximum Children: 30</li>
+              <li>Largest of the Chalets</li>
+              <li>Large kitchen, dining and living area</li>
+              <li>Great amenities</li>
+            </ul>
+          </features>
         </div>
+        <div class="chalet_popup_gallery_div">
+          <ul class="chalet_popup_gallery">
+            <li>
+              <a href="#"
+                ><img
+                  src="/Images/kakapo/bunk_room.jpg"
+                  alt="Bunkoom Kakapo Cabin"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="/Images/kakapo/hallway.jpg"
+                  alt="Hallway Kakapo Cabin"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="/Images/kakapo/cabin_exterior.jpg"
+                  alt="Cabin Exterior Kakapo"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="/Images/kakapo/cabin_view.jpg"
+                  alt="Chalet View Kakapo"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="book_now_link">
+          <a href="/Pages/hiring.html">Book Now &#187;</a>
+        </button>
       </div>
       <div id="chalet_popup2">
         <div class="chalet_popup_header">
@@ -126,16 +190,79 @@
           <button onclick="hide()" class="popup_close_button">&times;</button>
         </div>
         <div class="chalet_popup_p">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-            repellat, quos fugit saepe molestias asperiores dolorem, qui, illo
-            in non rem nulla culpa hic voluptate facere dicta vero libero
-            repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Est nobis unde at nulla, porro culpa iure numquam id cumque!
-            At dicta blanditiis a similique modi earum officiis. Porro, ab
-            eligendi!
-          </p>
+          <div>
+            <p>
+              Kereru Snow Mountain Cabins offer a truly enchanting escape in the
+              midst of a snow-covered wonderland. Step inside these cozy cabins
+              and you'll be greeted by a rustic yet inviting atmosphere. The
+              interior is adorned with charming wooden accents and comfortable
+              furnishings, creating a warm and welcoming ambiance. The living
+              area features a crackling fireplace, perfect for curling up with a
+              book or enjoying intimate conversations with loved ones. The fully
+              equipped kitchen allows you to prepare delicious meals, while the
+              bedrooms offer a peaceful retreat with breathtaking views of the
+              snow-dusted landscape. Surround yourself with the beauty of nature
+              and indulge in a range of outdoor activities, from skiing and
+              snowboarding to snowshoeing and winter hikes. Whether you're
+              seeking adventure or relaxation, Kereru Snow Mountain Cabins
+              provide the perfect sanctuary for your snowy mountain getaway.
+            </p>
+          </div>
+          <features>
+            <h4>Features</h4>
+            <ul>
+              <li>Maximum Adults: 2</li>
+              <li>Maximum Children: 4</li>
+              <li>Great option for families</li>
+              <li>2 bedrooms</li>
+              <li>Seperate Living Areas</li>
+            </ul>
+          </features>
         </div>
+        <ul class="chalet_popup_gallery">
+          <li>
+            <a href="#"
+              ><img
+                src="/Images/kereru/adult_bedroom.jpg"
+                alt="Adult Bedroom Kereru Cabin"
+                height="500"
+                width="500"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="/Images/kereru/kitchen.jpg"
+                alt="Kitchen Kereru Cabin"
+                height="500"
+                width="500"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="/Images/kereru/cabin_exterior.jpg"
+                alt="Cabin Exterior Kereru "
+                height="500"
+                width="500"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="/Images/kereru/kids_bedroom.jpg"
+                alt="Kids Bedroom Kereru"
+                height="500"
+                width="500"
+              />
+            </a>
+          </li>
+        </ul>
+        <button class="book_now_link">
+          <a href="/Pages/hiring.html">Book Now &#187;</a>
+        </button>
       </div>
       <div id="chalet_popup3">
         <div class="chalet_popup_header">
@@ -143,16 +270,80 @@
           <button onclick="hide()" class="popup_close_button">&times;</button>
         </div>
         <div class="chalet_popup_p">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-            repellat, quos fugit saepe molestias asperiores dolorem, qui, illo
-            in non rem nulla culpa hic voluptate facere dicta vero libero
-            repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Est nobis unde at nulla, porro culpa iure numquam id cumque!
-            At dicta blanditiis a similique modi earum officiis. Porro, ab
-            eligendi!
-          </p>
+          <div>
+            <p>
+              Pukeko Snow Mountain Cabins offer a truly enchanting escape in the
+              midst of a snow-covered wonderland. Step inside these cozy cabins
+              and you'll be greeted by a rustic yet inviting atmosphere. The
+              interior is adorned with charming wooden accents, comfortable
+              furnishings, and warm lighting, creating a cozy and intimate
+              ambiance. The living area features a crackling fireplace, perfect
+              for cozying up on chilly evenings. The fully equipped kitchen
+              allows for the preparation of delicious meals, while the bedrooms
+              offer a peaceful retreat with breathtaking views of the
+              snow-dusted landscape. Surround yourself with the beauty of nature
+              and indulge in a range of outdoor activities, from skiing and
+              snowboarding to snowshoeing and winter hikes. Whether you seek
+              adventure or relaxation, Pukeko Snow Mountain Cabins provide the
+              perfect sanctuary for your snowy mountain getaway.
+            </p>
+          </div>
+          <features>
+            <h4>Features</h4>
+            <ul>
+              <li>Maximum Adults: 6</li>
+              <li>Maximum Children: 15</li>
+              <li>
+                Great for large groups/families wanting a chalet to themselves
+              </li>
+              <li>Limits on adult/child number ensure comfortable stay</li>
+            </ul>
+          </features>
         </div>
+        <ul class="chalet_popup_gallery">
+          <li>
+            <a href="#"
+              ><img
+                src="/Images/pukeko/adult_bedroom.jpg"
+                alt="Adult Bedroom Pukeko Cabin"
+                height="500"
+                width="500"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="/Images/pukeko/bathroom.jpg"
+                alt="Bathroom Pukeko Cabin"
+                height="500"
+                width="500"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="/Images/pukeko/chalet_exterior.jpg"
+                alt="Cabin Exterior Pukeko"
+                height="500"
+                width="500"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="/Images/pukeko/chalet_view.jpg"
+                alt="Chalet View Pukeko"
+                height="500"
+                width="500"
+              />
+            </a>
+          </li>
+        </ul>
+        <button class="book_now_link">
+          <a href="/Pages/hiring.html">Book Now &#187;</a>
+        </button>
       </div>
       <div id="overlay"></div>
     </section>
@@ -222,16 +413,15 @@
         </div>
         <div class="footer_col">
           <h4>Pages</h4>
-          <p>Home</p>
-          <p>Membership</p>
-          <p>Cabin Hire</p>
+          <p><a href="/index.html">Home</a></p>
+          <p><a href="/Pages/membership.html">Membership</a></p>
+          <p><a href="/Pages/hiring.html">Cabin Hire</a></p>
         </div>
         <div class="footer_col">
           <h4>Legal</h4>
-          <p>FAQ</p>
-          <p>Legality</p>
-          <p>Terms & Conditions</p>
-          <p>Privacy Policy</p>
+          <p><a href="/Pages/FAQ.html">FAQ</a></p>
+          <p><a href="/Pages/T.A.C.html">Terms & Conditions</a></p>
+          <p><a href="/Pages/privacy_policy.html">Privacy Policy</a></p>
         </div>
       </div>
       <div class="footer_bar">
@@ -239,6 +429,9 @@
       </div>
     </footer>
     <script>
+      window.onload = function () {
+        hide();
+      };
       function hide() {
         document.getElementById("chalet_popup1").hidden = true;
         document.getElementById("chalet_popup2").hidden = true;
