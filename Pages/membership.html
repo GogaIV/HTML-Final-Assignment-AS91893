@@ -36,13 +36,213 @@
           <li class="nav_links">
             <a href="/Pages/hiring.html">Hire a Cabin</a>
           </li>
-          <li class="nav_links"><a href="/Pages/FAQ.html">F.A.Q.</a></li>
         </ul>
-        <button class="nav_button" type="button">Contact Us</button>
+        <button
+          class="nav_button"
+          type="button"
+          href="mailto:st22080@ormiston.school.nz"
+        >
+          Contact Us
+        </button>
       </nav>
     </div>
     <!-- Membership Page -->
-    <section></section>
+    <section class="membership_section_container membership_info_container">
+      <div class="membership_info_image">
+        <img
+          src="/Images/maunga_club_cabin.jpg"
+          alt="Promotional image of chalet"
+        />
+      </div>
+      <div class="membership_info_content">
+        <h2 class="membership_section_header">
+          Maunga Clubs Membership Program
+        </h2>
+        <p>
+          Maunga Club's offers a variety of membership options to suit your
+          needs. With Maunga Club, you can book chalets for your next snow
+          mountain trip. Maunga Club has a variety of benifits along with it, so
+          there will always be something for everyone. Join Maunga Club and get
+          access to cabin hires today!
+        </p>
+        <ul>
+          <li>
+            <span><i class="ri-checkbox-circle-fill"></i></span>
+            Maunga Club Chalets can only be booked by members!
+          </li>
+          <li>
+            <span><i class="ri-checkbox-circle-fill"></i></span>
+            Maunga Club offers free activites along with your cabin bookings
+          </li>
+          <li>
+            <span><i class="ri-checkbox-circle-fill"></i></span>
+            Maunga Club has activites for everyone, including the kiddies!
+          </li>
+          <li>
+            <span><i class="ri-checkbox-circle-fill"></i></span>
+            Maunga Club provides seamless booking services to ease the stress on
+            your side
+          </li>
+          <li>
+            <span><i class="ri-checkbox-circle-fill"></i></span>
+            Maunga Club is a family and you can be apart of it by joining us!
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="membership_hero">
+      <div class="membership_section_container membership_hero_container">
+        <div class="membership_hero_card">
+          <img src="/Images/membership/member get together.jpg" alt="hero" />
+          <h4>Healthy Lifestyle</h4>
+          <p>
+            Embrace connections with our membership program. Our members are our
+            family so you should always expect the best treatment from us. Join
+            us and become part of this ever growing family. Feel the love of
+            Maunga Club!
+          </p>
+        </div>
+        <div class="membership_hero_card">
+          <img src="/Images/membership/kid members.jpg" alt="hero" />
+          <h4>Activities for all</h4>
+          <p>
+            Maunga club offers activities for the whole family. Come ski, ride,
+            and even partake in archery by joining our membership program. With
+            Maunga Club, you can make a booking and know we got you covered by
+            providing non-stop activites for all ages!
+          </p>
+        </div>
+        <div class="membership_hero_card">
+          <img src="/Images/membership/ski race.jpg" alt="hero" />
+          <h4>Annual Ski Race</h4>
+          <p>
+            Partake in our annual skiing race and experience the thrill of
+            racing through rigorous tracks. Be apart of the most well-renowned
+            ski race in New Zealand. Get lessons from some of the worlds bests
+            skiers. Or if you're up for the challange, you can race them and win
+            $1000's of dollars in prize money!
+          </p>
+        </div>
+        <div class="membership_hero_card">
+          <img src="/Images/membership/snow cabin members.jpg" alt="hero" />
+          <h4>High Class Chalets</h4>
+          <p>
+            Book one of our chalets and experience the best that Maunga Club has
+            to offer. By choosing us you have guaranteed yourself some of the
+            most well-built snow chalets in the world. Join our membership
+            program and book them now!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="membership_signup">
+      <div class="membership_section_container membership_container">
+        <p class="membership_section_subheader">PRICING TABLE</p>
+        <h2 class="membership_section_header">Membership Cards</h2>
+        <div class="membership_grid">
+          <div class="membership_card">
+            <h4>YEAR CARD</h4>
+            <h2><sup>$</sup>499</h2>
+            <h3>For 1 Year</h3>
+            <h4>ENJOY ALL THE FEATURES</h4>
+            <p>Access all the clubs facilities</p>
+            <p>Have personal Ski Trainers</p>
+            <p>Book group activites in advance</p>
+            <p>Book Chalets on the go</p>
+            <button onclick="show()" class="membership_button">
+              GET STARTED
+            </button>
+          </div>
+          <div class="membership_card">
+            <h4>MONTHLY CARD</h4>
+            <h2><sup>$</sup>200</h2>
+            <h3>For 1 Month</h3>
+            <h4>ENJOY ALL THE FEATURES</h4>
+            <p>Partake in all activities</p>
+            <p>Treat yourself to our finest buffet</p>
+            <p>Promotional offers</p>
+            <p>Discounts to all tourist attractions</p>
+            <button onclick="show()" class="membership_button">
+              GET STARTED
+            </button>
+          </div>
+          <div class="membership_card">
+            <h4>WEEKLY CARD</h4>
+            <h2><sup>$</sup>85</h2>
+            <h3>For 1 Week</h3>
+            <h4>ENJOY ALL THE FEATURES</h4>
+            <p>Access to sauna and gym at main building</p>
+            <p>Free of cost rental ski gear</p>
+            <p>50% off all gift shop purchases</p>
+            <p>Car rental discounts</p>
+            <button onclick="show()" class="membership_button">
+              GET STARTED
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="membership_checkout">
+      <div id="checkout_div" class="cabin_hire_checkout">
+        <button onclick="hide()" class="popup_close_button">&times;</button>
+        <div class="checkout_row">
+          <div class="checkout_col_75">
+            <div class="container">
+              <form action="mailto:maungaclub@maungaclub.maungaclub">
+                <div class="checkout_row">
+                  <div class="checkout_col_50 membership_col_50">
+                    <h3>Please Include the Following In Your Email</h3>
+                    <label for="fname"
+                      ><i class="fa fa-user"></i> Full Name</label
+                    >
+                    <p>- Your full name including first and last</p>
+                    <label for="Physical Address"
+                      ><i class="fa fa-envelope"></i> Address</label
+                    >
+                    <p>- Your home address</p>
+                    <label for="Proof of Address">Proof of Address</label>
+                    <p>
+                      - Proof of address with either a power or internet bill
+                    </p>
+                    <label for="Proof of Id">Proof of ID</label>
+                    <p>
+                      - A picture of either your drivers license of your
+                      passport
+                    </p>
+                  </div>
+                </div>
+                <input class="checkout_btn" type="submit" value="Send" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="overlay"></div>
+    </section>
+
+    <section class="membership_banner">
+      <div class="membership_section_container banner_container">
+        <div class="membership_banner_card">
+          <h4>3,000</h4>
+          <p>Happy Members</p>
+        </div>
+        <div class="banner_card">
+          <h4>30</h4>
+          <p>Upcoming Chalets</p>
+        </div>
+        <div class="banner_card">
+          <h4>25</h4>
+          <p>Years of Experience</p>
+        </div>
+        <div class="banner_card">
+          <h4>4,600</h4>
+          <p>Positive Reviews</p>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -68,7 +268,6 @@
         </div>
         <div class="footer_col">
           <h4>Legal</h4>
-          <p><a href="/Pages/FAQ.html">FAQ</a></p>
           <p><a href="/Pages/T.A.C.html">Terms & Conditions</a></p>
           <p><a href="/Pages/privacy_policy.html">Privacy Policy</a></p>
         </div>
@@ -77,7 +276,19 @@
         Copyright © Maunga Club 2023. All rights reserved.
       </div>
     </footer>
-    <!-- State javascript file -->
-    <script src="/Javascript/javascript.js"></script>
+    <!--  javascript code -->
+    <script>
+      window.onload = function () {
+        hide();
+      };
+      function hide() {
+        document.getElementById("checkout_div").hidden = true;
+        document.getElementById("overlay").hidden = true;
+      }
+      function show() {
+        document.getElementById("checkout_div").hidden = false;
+        document.getElementById("overlay").hidden = false;
+      }
+    </script>
   </body>
 </html>

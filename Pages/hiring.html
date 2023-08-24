@@ -40,11 +40,17 @@
           <li class="nav_links">
             <a href="/Pages/hiring.html">Hire a Cabin</a>
           </li>
-          <li class="nav_links"><a href="/Pages/FAQ.html">F.A.Q.</a></li>
         </ul>
-        <button class="nav_button" type="button">Contact Us</button>
+        <button
+          class="nav_button"
+          type="button"
+          href="mailto:st22080@ormiston.school.nz"
+        >
+          Contact Us
+        </button>
       </nav>
     </div>
+
     <section class="cabin_hire_container header_container">
       <div class="cabin_hire_image">
         <div class="cabin_hire_content">
@@ -114,45 +120,20 @@
                       name="email"
                       placeholder="john@example.com"
                     />
-                    <label for="adr"
-                      ><i class="fa fa-address-card-o"></i> Address</label
-                    >
+                    <label>Start Date</label>
                     <input
                       type="text"
-                      id="adr"
-                      name="address"
-                      placeholder="542 W. 15th Street"
+                      id="hirestart"
+                      name="hirestart"
+                      placeholder="dd/mm/yyyy"
                     />
-                    <label for="city"
-                      ><i class="fa fa-institution"></i> City</label
-                    >
+                    <label>End Date</label>
                     <input
                       type="text"
-                      id="city"
-                      name="city"
-                      placeholder="New York"
+                      id="hireend"
+                      name="hireend"
+                      placeholder="dd/mm/yyyy"
                     />
-
-                    <div class="checkout_row">
-                      <div class="checkout_col_50">
-                        <label for="state">State</label>
-                        <input
-                          type="text"
-                          id="state"
-                          name="state"
-                          placeholder="NY"
-                        />
-                      </div>
-                      <div class="checkout_col_50">
-                        <label for="zip">Zip</label>
-                        <input
-                          type="text"
-                          id="zip"
-                          name="zip"
-                          placeholder="10001"
-                        />
-                      </div>
-                    </div>
                   </div>
 
                   <div class="checkout_col_50">
@@ -210,11 +191,11 @@
                 </div>
                 <label>
                   <input type="checkbox" checked="checked" name="sameadr" />
-                  Shipping address same as billing
+                  Are you a member?
                 </label>
                 <input
                   onclick="confirm()"
-                  type="submit"
+                  type="reset"
                   value="Continue to checkout"
                   class="checkout_btn"
                 />
@@ -225,6 +206,7 @@
       </div>
       <div id="overlay"></div>
     </section>
+
     <footer class="footer">
       <div class="section_defaults footer_container">
         <div class="footer_col">
@@ -248,7 +230,6 @@
         </div>
         <div class="footer_col">
           <h4>Legal</h4>
-          <p><a href="/Pages/FAQ.html">FAQ</a></p>
           <p><a href="/Pages/T.A.C.html">Terms & Conditions</a></p>
           <p><a href="/Pages/privacy_policy.html">Privacy Policy</a></p>
         </div>
@@ -274,9 +255,7 @@
       }
 
       function confirm() {
-        document.getElementById("cabin_hire_checkout").hidden = true;
-        document.getElementById("overlay").hidden = true;
-        document;
+        alert("Your booking has been confirmed!");
       }
     </script>
   </body>
