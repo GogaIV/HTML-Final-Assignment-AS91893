@@ -13,23 +13,26 @@
     <!-- Below is title and calling css style sheet for all designed variables -->
     <title>Cabin Hire</title>
     <link rel="stylesheet" href="/styles.css" />
-    <link defer rel="javascript" href="/Javascript/javascript.js" />
     <!-- Pulling font from online library -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
     <!-- State javascript file -->
-    <script src="/Javascript/javascript.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
+
   <!-- Start of page creation -->
   <body>
     <!-- Create universal navigation header -->
     <div class="navbar_div">
       <nav class="navbar_nav">
         <a href="index.html" class="logo">
-          <img src="/Images/Maunga_Club_white.png" height="90" />
+          <img
+            src="/Images/Maunga_Club_white.png"
+            alt="Maunga Club Logo"
+            height="90"
+          />
         </a>
         <ul class="nav_menu">
           <li class="nav_links"><a href="index.html">Home</a></li>
@@ -40,14 +43,12 @@
             <a href="/Pages/hiring.html">Hire a Cabin</a>
           </li>
         </ul>
-        <a
-          class="nav_button"
-          type="button"
-          href="mailto:st22080@ormiston.school.nz"
+        <a class="nav_button" href="mailto:st22080@ormiston.school.nz"
           >Contact Us</a
         >
       </nav>
     </div>
+
     <!-- Home Page creation -->
     <!-- Introduction Content -->
     <section class="home_intro">
@@ -60,10 +61,12 @@
         <h1>Your Getaway In The Mountains</h1>
       </div>
     </section>
+    <!-- Chalet promotional informatoin -->
+    <!-- Chalet card grid showing clickable images of chalets -->
     <section class="chalet_promotional">
       <div class="chalet_grid">
         <div class="chalet_card">
-          <button onclick="show1()" class="chalet_button" border="0">
+          <button onclick="show1()" class="chalet_button">
             <img
               src="/Images/kakapo/cabin_exterior.jpg"
               alt="Luxurious Kakapo Cabin"
@@ -76,8 +79,9 @@
             <h3>Click Image For More</h3>
           </div>
         </div>
+        <!-- Chalet card 2 -->
         <div class="chalet_card">
-          <button onclick="show2()" class="chalet_button" border="0">
+          <button onclick="show2()" class="chalet_button">
             <img
               src="/Images/kereru/cabin_exterior.jpg"
               alt="Pristine Kereru Cabin"
@@ -90,9 +94,9 @@
             <h3>Click Image For More</h3>
           </div>
         </div>
-
+        <!-- Chalet card 3 -->
         <div class="chalet_card">
-          <button onclick="show3()" class="chalet_button" border="0">
+          <button onclick="show3()" class="chalet_button">
             <img
               src="/Images/pukeko/chalet_exterior.jpg"
               alt="New Pukeko Cabin"
@@ -106,11 +110,17 @@
           </div>
         </div>
       </div>
+
+      <!-- Chalet popups for the cards shown after tapping image using a true and false javascript-->
+       <!-- Chalet popups for the cards -->
       <div id="chalet_popup1">
+         <!-- Popup header -->
         <div class="chalet_popup_header">
           <h3>Kakapo Cabin</h3>
           <button onclick="hide()" class="popup_close_button">&times;</button>
         </div>
+        <!-- Popup content -->
+        <!-- Cabin description -->
         <div class="chalet_popup_p">
           <div>
             <p>
@@ -133,6 +143,7 @@
               mountain retreat.
             </p>
           </div>
+          <!-- Cabin features -->
           <features>
             <h4>Features</h4>
             <ul>
@@ -144,6 +155,7 @@
             </ul>
           </features>
         </div>
+         <!-- Popup image gallery -->
         <div class="chalet_popup_gallery_div">
           <ul class="chalet_popup_gallery">
             <li>
@@ -179,6 +191,7 @@
             </li>
           </ul>
         </div>
+        <!-- Book Now button -->
         <button class="book_now_link">
           <a href="/Pages/hiring.html">Book Now &#187;</a>
         </button>
@@ -263,12 +276,15 @@
           <a href="/Pages/hiring.html">Book Now &#187;</a>
         </button>
       </div>
+       <!-- Chalet popups for the cards -->
       <div id="chalet_popup3">
+        <!-- Popup header -->
         <div class="chalet_popup_header">
           <h3>Pukeko Cabin</h3>
           <button onclick="hide()" class="popup_close_button">&times;</button>
         </div>
         <div class="chalet_popup_p">
+           <!-- Cabin description -->
           <div>
             <p>
               Pukeko Snow Mountain Cabins offer a truly enchanting escape in the
@@ -287,6 +303,7 @@
               perfect sanctuary for your snowy mountain getaway.
             </p>
           </div>
+           <!-- Cabin features -->
           <features>
             <h4>Features</h4>
             <ul>
@@ -299,6 +316,7 @@
             </ul>
           </features>
         </div>
+         <!-- Popup image gallery -->
         <ul class="chalet_popup_gallery">
           <li>
             <a href="#"
@@ -340,18 +358,24 @@
             </a>
           </li>
         </ul>
+         <!-- Book Now button -->
         <button class="book_now_link">
-          <a href="/Pages/hiring.html">Book Now &#187;</a>
+          <a class="book_now_link" href="/Pages/hiring.html">Book Now &#187;</a>
         </button>
       </div>
+      <!-- Overlay for popups -->
       <div id="overlay"></div>
     </section>
+
+      <!-- Other sections (reviews, membership, footer) ... -->
 
     <section class="homepage_reviews">
       <div class="reviews_container">
         <h2 class="reviews_header">
           But Don't Take Our Word, Look at our reviews!
         </h2>
+
+        <!-- reviews for chalets -->
         <div class="review_grid">
           <div class="review_card">
             <img src="/Images/client-1.jpg" />
@@ -387,6 +411,8 @@
       <div class="homepage_membership_promo">
         <i>Cabin's can only be hired by members</i>
         <h4>Join our membership and get access to our cabins!</h4>
+
+        <!-- Join membership button -->
         <button
           class="membership_page_button"
           onclick="window.location.href ='/Pages/membership.html';"
@@ -430,12 +456,16 @@
       window.onload = function () {
         hide();
       };
+
+      // Function to hide popups and overlay
       function hide() {
         document.getElementById("chalet_popup1").hidden = true;
         document.getElementById("chalet_popup2").hidden = true;
         document.getElementById("chalet_popup3").hidden = true;
         document.getElementById("overlay").hidden = true;
       }
+
+      // Functions to show individual chalet popups
       function show1() {
         document.getElementById("chalet_popup1").hidden = false;
         document.getElementById("overlay").hidden = false;

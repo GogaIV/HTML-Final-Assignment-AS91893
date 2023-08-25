@@ -51,6 +51,7 @@
       </nav>
     </div>
 
+    <!-- Below is the main booking container thats outside the popout -->
     <section class="cabin_hire_container header_container">
       <div class="cabin_hire_image">
         <div class="cabin_hire_content">
@@ -93,6 +94,9 @@
           </button>
         </div>
       </div>
+
+      <!-- Below is the same popout used on the membership page but the 
+        information is edited to suit cabin_hire signup. -->
       <div id="cabin_hire_checkout" class="cabin_hire_checkout">
         <button onclick="hide()" class="popup_close_button">&times;</button>
         <div class="checkout_row">
@@ -243,12 +247,12 @@
       window.onload = function () {
         hide();
       };
-
+      // hide popout singup
       function hide() {
         document.getElementById("cabin_hire_checkout").hidden = true;
         document.getElementById("overlay").hidden = true;
       }
-
+      // Show popout singup
       function show() {
         document.getElementById("cabin_hire_checkout").hidden = false;
         document.getElementById("overlay").hidden = false;
